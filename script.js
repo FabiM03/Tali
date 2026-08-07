@@ -73,7 +73,7 @@ document.getElementById("toCalendar").onclick=()=>{
 const calendar=document.getElementById("calendar");
 const selected=[];
 
-for(let i=0;i<30;i++){
+for(let i=12;i<42;i++){
     const d=new Date();
     d.setDate(d.getDate()+i);
 
