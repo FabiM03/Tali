@@ -109,9 +109,9 @@ cursor:pointer;
 }
 
 .day.selected{
-background:#ff4f87;
+background:#22bc60;
 color:white;
-border-color:#ff4f87;
+border-color:#22bc60;
 }
 
 textarea{
