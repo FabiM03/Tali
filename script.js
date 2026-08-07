@@ -1,6 +1,6 @@
 
 emailjs.init({
-    publicKey: "PASTE_PUBLIC_KEY_HERE"
+    publicKey: "XFmV7KlhzizKqkh26"
 });
 
 const noBtn=document.getElementById("noBtn");
