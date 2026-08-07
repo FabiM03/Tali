@@ -1,6 +1,6 @@
 
 emailjs.init({
-    publicKey: "XFmV7KlhzizKqkh26"
+    publicKey: "PASTE_PUBLIC_KEY_HERE"
 });
 
 const noBtn=document.getElementById("noBtn");
@@ -28,6 +28,26 @@ document.getElementById("yesBtn").onclick=()=>{
     activities.classList.remove("hidden");
 };
 
+document.getElementById("partnerBtn").onclick=async()=>{
+    welcome.classList.add("hidden");
+    bruhPage.classList.remove("hidden");
+
+    try{
+        await emailjs.send(
+            "service_h3djbra",
+            "template_uz0ku1o",
+            {
+                name:"Nikol",
+                programs:"-",
+                dates:"-",
+                note:"Van palija EHHHH"
+            }
+        );
+    }catch(e){
+        console.error(e);
+    }
+};
+
 const otherCheck=document.getElementById("otherCheck");
 const otherText=document.getElementById("otherText");
 
@@ -53,7 +73,7 @@ document.getElementById("toCalendar").onclick=()=>{
 const calendar=document.getElementById("calendar");
 const selected=[];
 
-for(let i=13;i<50;i++){
+for(let i=0;i<30;i++){
     const d=new Date();
     d.setDate(d.getDate()+i);
 
