@@ -2,7 +2,7 @@
 body{
 margin:0;
 font-family:system-ui,sans-serif;
-background:linear-gradient(135deg,#ffd7e5,#fff);
+background:linear-gradient(135deg,#20cf46,#21169c);
 min-height:100vh;
 display:flex;
 justify-content:center;
@@ -35,7 +35,7 @@ font-size:18px;
 cursor:pointer;
 }
 
-.yes{background:#ff4f87;color:white;}
+.yes{background:#9e2249;color:white;}
 .no{background:#ddd;}
 .partner{
 background:none;
