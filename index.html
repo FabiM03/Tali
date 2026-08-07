@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Időpont hozzám XD</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div id="welcome" class="card">
+    <h1>Szia Nikol!</h1>
+    <p>
+        A következő lenne a kérdésem:<br>Szeretnél velem a Railjeten kívül is találkozni?
+    </p>
+
+
+    <div class="button-area">
+        <button id="yesBtn" class="yes">Igen ❤️</button>
+        <button id="noBtn" class="no">Nem</button>
+    </div>
+</div>
+
+<div id="activities" class="card hidden">
+    <h2>Mihez lenne kedved?</h2>
+
+    <label><input type="checkbox" value="Kávézás">Kávézás</label>
+    <label><input type="checkbox" value="Fagyizás">Fagyizás</label>
+    <label><input type="checkbox" value="Séta">Séta</label>
+    <label><input type="checkbox" value="Vacsora">Vacsora</label>
+    <label><input type="checkbox" value="Kocsmázás">Kocsmázás</label>
+    <label><input type="checkbox" value="Meglepetés">Meglepetés</label>
+
+    <label class="other-label">
+        <input type="checkbox" id="otherCheck">Egyéb:
+        <input type="text" id="otherText" placeholder="Írd ide..." disabled>
+    </label>
+
+    <button id="toCalendar">Tovább</button>
+</div>
+
+<div id="calendarPage" class="card hidden">
+    <h2>Mikor érsz rá?</h2>
+    <p>Több napot is kiválaszthatsz.</p>
+    <p>Augusztus 10-19 Spanyolországban nyaralok, emiatt indul innentől, illetve az augusztus 22 és 24 nem jó, csak akkora kocka már nem voltam, hogy belerakjam a saját ráérésem is :)</p>
+
+    <div id="calendar"></div>
+
+    <textarea id="note" placeholder="Megjegyzés (opcionális)"></textarea>
+
+    <button id="sendBtn">Elküld</button>
+</div>
+
+<div id="done" class="card hidden">
+    <h2>Köszönöm!</h2>
+    <p>A megrendelésed feldolgozás alatt van. Hamarosan jelentkezem XD</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
